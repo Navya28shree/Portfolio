@@ -13,7 +13,7 @@ https://navya28shree.github.io/Portfolio/
 
 ## About Me
 
-I am a front-end developer interested in building clean and responsive websites.
+I am a software developer with a strong foundation in Computer Science and Engineering.
 
 ## Contact
 
