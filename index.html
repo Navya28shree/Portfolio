@@ -150,7 +150,7 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="packet-card">
-  <img class="packet-img" src="autism.png" alt="ASD Detection" />
+  <img class="packet-img" src="Screenshot 2025-03-26 131305.png" alt="ASD Detection" />
   <div class="packet-content">
     <h3>Early Detection of Autism Spectrum Disorder</h3>
     <p>
@@ -441,37 +441,43 @@
           // Simple rule-based responses (fallback if API fails)
           const lowerMsg = userMessage.toLowerCase();
 
-          if (
-            lowerMsg.includes("who is") ||
-            lowerMsg.includes("tell me about")
-          ) {
-           return "Navyashree S is a passionate Software Developer with a strong Computer Science and Engineering foundation. She specializes in Java, Python, web technologies, database management, and machine learning, and has developed projects including an ASD Detection system, Fake News Detection system, and Employee Management application.";
-          } else if (
-            lowerMsg.includes("skill") ||
-            lowerMsg.includes("technologies") ||
-            lowerMsg.includes("know")
-          ) {
-            return "Her technical skills include Java, C, C++, Python, HTML, CSS, JavaScript, Bootstrap, MySQL, Git, GitHub, and machine learning concepts such as TF-IDF, MLP, XGBoost, classification, and model evaluation.";
-            lowerMsg.includes("project") ||
-            lowerMsg.includes("built") ||
-            lowerMsg.includes("create")
-          ) {
-            return "She has developed several projects including: 1. Early Detection of Autism Spectrum Disorder using Python and XGBoost 2. Fake News Detection using Python, TF-IDF, MLP, and Flask 3. Employee Management System using Java Swing, JDBC, and MySQL 4. Online Calculator using HTML, CSS, and JavaScript 5. Jewelry E-Commerce Website with responsive design.";
-          } else if (
-            lowerMsg.includes("available") ||
-            lowerMsg.includes("hire") ||
-            lowerMsg.includes("opportunities")
-          ) {
-            return "Yes! Navyashree is actively seeking full-time opportunities and collaborations. You can reach her via email at navyashree28112004@gmail.com or through LinkedIn.";
-          } else if (
-            lowerMsg.includes("contact") ||
-            lowerMsg.includes("email") ||
-            lowerMsg.includes("reach")
-          ) {
-            return "You can contact Navyashree at: navyashree28112004@gmail.com, or connect with her on GitHub (navyashree-s) and LinkedIn.";
-          } else {
-            return "I'm here to help with questions about Navyashree's skills, projects, experience, and availability. Feel free to ask something specific!";
-          }
+         if (
+  lowerMsg.includes("who is") ||
+  lowerMsg.includes("tell me about")
+) {
+  return "Navyashree S is a passionate Software Developer with a strong Computer Science and Engineering foundation. She specializes in Java, Python, web technologies, database management, and machine learning, and has developed projects including an ASD Detection system, Fake News Detection system, and Employee Management application.";
+
+} else if (
+  lowerMsg.includes("skill") ||
+  lowerMsg.includes("technologies") ||
+  lowerMsg.includes("know")
+) {
+  return "Her technical skills include Java, C, C++, Python, HTML, CSS, JavaScript, Bootstrap, MySQL, Git, GitHub, and machine learning concepts such as TF-IDF, MLP, XGBoost, classification, and model evaluation.";
+
+} else if (
+  lowerMsg.includes("project") ||
+  lowerMsg.includes("built") ||
+  lowerMsg.includes("create")
+) {
+  return "She has developed several projects including: 1. Early Detection of Autism Spectrum Disorder using Python and XGBoost 2. Fake News Detection using Python, TF-IDF, MLP, and Flask 3. Employee Management System using Java Swing, JDBC, and MySQL 4. Online Calculator using HTML, CSS, and JavaScript 5. Jewelry E-Commerce Website with responsive design.";
+
+} else if (
+  lowerMsg.includes("available") ||
+  lowerMsg.includes("hire") ||
+  lowerMsg.includes("opportunities")
+) {
+  return "Yes! Navyashree is actively seeking full-time opportunities and collaborations. You can reach her via email at navyashree28112004@gmail.com or through LinkedIn.";
+
+} else if (
+  lowerMsg.includes("contact") ||
+  lowerMsg.includes("email") ||
+  lowerMsg.includes("reach")
+) {
+  return "You can contact Navyashree at: navyashree28112004@gmail.com, or connect with her on GitHub (navyashree-s) and LinkedIn.";
+
+} else {
+  return "I'm here to help with questions about Navyashree's skills, projects, experience, and availability. Feel free to ask something specific!";
+}
         }
 
         // Handle sending message
