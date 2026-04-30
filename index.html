@@ -58,13 +58,9 @@
           </h1>
           <div class="hero-title">Software Developer</div>
           <p class="hero-description">
-            Aspiring Software Developer with a strong foundation in Computer
-            Science and Engineering. Proficient in Java, web technologies, and
-            DBMS with hands-on project experience. Passionate about creating
-            scalable and user-friendly software solutions in collaborative
-            environments.
+            Aspiring Full Stack Developer with a foundation in Computer Science and Engineering. Familiar with front-end and back-end development concepts, with hands-on experience in building responsive web applications and database-driven solutions. Skilled in HTML, CSS, JavaScript, Python, and problem-solving techniques
           </p>
-          <a href="NAVYASHREE S 2026.pdf" class="btn-nexus" download>
+          <a href="NAVYASHREE S RESUME 2026.pdf" class="btn-nexus" download>
             <i class="fas fa-download"></i> Download Resume
           </a>
         </div>
@@ -119,6 +115,25 @@
           <i class="fab fa-github"></i>
           <span>GitHub</span>
         </div>
+        <div class="skill-card card-11">
+  <i class="fab fa-python"></i>
+  <span>Python</span>
+</div>
+
+<div class="skill-card card-12">
+  <i class="fas fa-brain"></i>
+  <span>MLP</span>
+</div>
+
+<div class="skill-card card-13">
+  <i class="fas fa-chart-line"></i>
+  <span>XGBoost</span>
+</div>
+
+<div class="skill-card card-14">
+  <i class="fas fa-robot"></i>
+  <span>TF-IDF</span>
+</div>
         <div class="skill-card card-9">
           <i class="fas fa-code"></i>
           <span>C</span>
@@ -134,6 +149,16 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-grid">
+        <div class="packet-card">
+  <img class="packet-img" src="autism.png" alt="ASD Detection" />
+  <div class="packet-content">
+    <h3>Early Detection of Autism Spectrum Disorder</h3>
+    <p>
+      Built an ASD detection system using Python and eye-tracking data,
+      applying the XGBoost model for prediction.
+    </p>
+  </div>
+</div>
         <div class="packet-card">
           <img class="packet-img" src="image copy 3.png" alt="Fake News" />
           <div class="packet-content">
@@ -161,13 +186,6 @@
             src="Screenshot 2025-03-26 131305.png"
             alt="Calculator"
           />
-          <div class="packet-content">
-            <h3>Online Calculator</h3>
-            <p>
-              Created a responsive calculator using HTML, CSS, and JavaScript
-              with accurate operations and clean UI.
-            </p>
-          </div>
         </div>
         <div class="packet-card">
           <img
@@ -328,12 +346,15 @@
 
         // Resume knowledge base (embedded for context)
         const resumeContext = `
-          Navyashree S is a Software Developer with a strong foundation in Computer Science.
-          Skills: Java, MySQL, HTML, CSS, JavaScript, Bootstrap, Git, GitHub, C, C++, TF-IDF, MLP, Flask.
-          Projects: Fake News Detection using Python TF-IDF MLP, Employee Management using Java Swing JDBC MySQL,
-          Online Calculator using HTML CSS JavaScript, Jewelry E-Commerce Interface.
-          Status: Open to opportunities and collaborations.
-        `;
+  Navyashree S is a Software Developer with a strong foundation in Computer Science and Engineering.
+  Skills: Java, C, C++, Python, HTML, CSS, JavaScript, Bootstrap, MySQL, Git, GitHub, TF-IDF, MLP, XGBoost.
+  Projects: Early Detection of Autism Spectrum Disorder using Python and XGBoost,
+  Fake News Detection using Python TF-IDF MLP Flask,
+  Employee Management System using Java Swing JDBC MySQL,
+  Online Calculator using HTML CSS JavaScript,
+  Jewelry E-Commerce Interface.
+  Status: Open to opportunities and collaborations.
+`;
 
         // Llama-3 API endpoint (replace with your actual endpoint)
         const LLAMA_API_URL = "https://api.llama-3.io/v1/chat"; // example – replace with real endpoint
@@ -424,19 +445,18 @@
             lowerMsg.includes("who is") ||
             lowerMsg.includes("tell me about")
           ) {
-            return "Navyashree S is a passionate Software Developer with a strong Computer Science foundation. She specializes in Java, web technologies, and DBMS, and has built several impressive projects including a Fake News Detection system and an Employee Management application.";
+           return "Navyashree S is a passionate Software Developer with a strong Computer Science and Engineering foundation. She specializes in Java, Python, web technologies, database management, and machine learning, and has developed projects including an ASD Detection system, Fake News Detection system, and Employee Management application.";
           } else if (
             lowerMsg.includes("skill") ||
             lowerMsg.includes("technologies") ||
             lowerMsg.includes("know")
           ) {
-            return "Her technical skills include: Java, MySQL, HTML, CSS, JavaScript, Bootstrap, Git, GitHub, C, C++, along with ML tools like TF-IDF, MLP, and Flask for web development.";
-          } else if (
+            return "Her technical skills include Java, C, C++, Python, HTML, CSS, JavaScript, Bootstrap, MySQL, Git, GitHub, and machine learning concepts such as TF-IDF, MLP, XGBoost, classification, and model evaluation.";
             lowerMsg.includes("project") ||
             lowerMsg.includes("built") ||
             lowerMsg.includes("create")
           ) {
-            return "She has built 4 key projects: 1. Fake News Detection (Python, TF-IDF, MLP, Flask) 2. Employee Management System (Java Swing, MySQL, JDBC) 3. Online Calculator (HTML, CSS, JS) 4. Jewelry E-Commerce Website (HTML,CSS,responsive design).";
+            return "She has developed several projects including: 1. Early Detection of Autism Spectrum Disorder using Python and XGBoost 2. Fake News Detection using Python, TF-IDF, MLP, and Flask 3. Employee Management System using Java Swing, JDBC, and MySQL 4. Online Calculator using HTML, CSS, and JavaScript 5. Jewelry E-Commerce Website with responsive design.";
           } else if (
             lowerMsg.includes("available") ||
             lowerMsg.includes("hire") ||
